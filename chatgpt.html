@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script>
+      function captionFunc(x) {
+         document.getElementById(x).createCaption().innerHTML = "Demo Caption";
+      }
+      </script>
+   </head>
+   <body>
+      <table style="border:2px solid black" id="newtable">
+         <tr>
+            <td>One</td>
+            <td>Two</td>
+         </tr>
+         <tr>
+            <td>Three</td>
+            <td>Four</td>
+         </tr>
+         <tr>
+            <td>Five</td>
+            <td>Six</td>
+         </tr>
+      </table>
+      <p>
+         <input type="button" onclick="captionFunc('newtable')" value="Display Table Caption">
+      </p>
+      <p>
+         <input type="button" value="Delete Row" onclick="document.getElementById('newtable').deleteRow(0)">
+      </p>
+   </body>
+</html>
